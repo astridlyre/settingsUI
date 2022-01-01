@@ -14,12 +14,19 @@ export function Toggle({ setting }) {
   const id = useRef(nanoid())
 
   const buttonClasses = useClasses(
-    [styles.toggleButton, setting.state && styles.on],
+    ['flex', 'p1', styles.toggleButton, setting.state && styles.on],
     [setting.state],
   )
 
   const labelClasses = useClasses(
-    [styles.label, setting.state && styles.on],
+    [
+      'flex',
+      'items-center',
+      'justify-between',
+      'gray-500',
+      styles.label,
+      setting.state && styles.on,
+    ],
     [setting.state],
   )
 
@@ -31,7 +38,11 @@ export function Toggle({ setting }) {
         onClick={setting.onToggle}
         className={buttonClasses}
       >
-        <motion.div className={styles.icon} transition={spring} layout />
+        <motion.div
+          className={`${styles.icon} bg-white`}
+          transition={spring}
+          layout
+        />
       </button>
     </label>
   )

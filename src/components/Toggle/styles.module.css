@@ -1,22 +1,20 @@
+.label,
+.toggleButton {
+  transition: var(--short-transition);
+}
+
 .label {
-  align-items: center;
-  color: var(--gray-500);
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.1s ease-out;
 }
 
 .label.on,
 .label:hover,
 .label:focus-within {
   color: var(--gray-600);
-  transition: all 0.1s ease-out;
 }
 
 .label:hover .toggleButton {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-  transition: all 0.1s ease-out;
 }
 
 .icon {
@@ -28,22 +26,9 @@
 
 .toggleButton {
   background-color: var(--gray-100);
-  border: none;
   border-radius: var(--md-spacing);
-  color: var(--white);
-  display: flex;
   justify-content: flex-start;
-  padding: var(--base-unit);
-  transition: all 0.1s ease-out;
   width: calc(var(--md-spacing) + var(--base-spacing));
-}
-
-.toggleButton .icon {
-  background-color: var(--white);
-}
-
-.toggleButton:hover {
-  cursor: pointer;
 }
 
 .toggleButton.on {

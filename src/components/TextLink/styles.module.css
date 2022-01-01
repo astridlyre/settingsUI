@@ -1,19 +1,11 @@
 .button {
-  padding: 0;
-  background: none;
-  border: none;
-  font-size: 0.8rem;
-  font-weight: 600;
   text-decoration: underline;
   width: fit-content;
-  color: var(--gray-500);
-  transition: all 0.1s ease-out;
+  transition: var(--short-transition);
   outline-offset: 3px;
 }
 
 .button:hover,
 .button:focus {
-  transition: all 0.1s ease-out;
   color: var(--gray-600);
-  cursor: pointer;
 }

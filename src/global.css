@@ -26,6 +26,10 @@
   --base-font-size: 1rem;
   --base-line-height: 1.5;
   --heading-line-height: 1.2;
+
+  --light-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  --dark-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+  --short-transition: all 0.1s ease-out;
 }
 
 body {
@@ -35,11 +39,199 @@ body {
   color: var(--black);
 }
 
+ol[class],
+ul[class] {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  outline-color: var(--gray-600);
+  border: none;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .small {
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-button {
-  outline-color: var(--gray-600);
+.gray-100 {
+  color: var(--gray-100);
+}
+
+.gray-200 {
+  color: var(--gray-200);
+}
+
+.gray-300 {
+  color: var(--gray-300);
+}
+
+.gray-400 {
+  color: var(--gray-400);
+}
+
+.gray-500 {
+  color: var(--gray-500);
+}
+
+.gray-600 {
+  color: var(--gray-600);
+}
+
+.white {
+  color: var(--white);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.black {
+  color: var(--black);
+}
+
+.h1 {
+  font-size: var(--h1);
+}
+
+.h2 {
+  font-size: var(--h2);
+}
+
+.h3 {
+  font-size: var(--h3);
+}
+
+.h4 {
+  font-size: var(--h4);
+}
+
+.h5 {
+  font-size: var(--h5);
+}
+
+.h6 {
+  font-size: var(--h6);
+}
+
+.p0 {
+  padding: 0;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.gap1 {
+  gap: var(--base-unit);
+}
+
+.gap2 {
+  gap: var(--base-spacing);
+}
+
+.gap3 {
+  gap: var(--sm-spacing);
+}
+
+.gap4 {
+  gap: var(--md-spacing);
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.p1 {
+  padding: var(--base-unit);
+}
+
+.p2 {
+  padding: var(--base-spacing);
+}
+
+.p3 {
+  padding: var(--sm-spacing);
+}
+
+.p4 {
+  padding: var(--md-spacing);
+}
+
+.r1 {
+  border-radius: var(--base-unit);
+}
+
+.r2 {
+  border-radius: var(--base-spacing);
+}
+
+.r3 {
+  border-radius: var(--sm-spacing);
+}
+
+.rfull {
+  border-radius: 100%;
+}
+
+.mb1 {
+  margin-bottom: var(--base-unit);
+}
+
+.mb2 {
+  margin-bottom: var(--base-spacing);
+}
+
+.mb3 {
+  margin-bottom: var(--sm-spacing);
+}
+
+.mb4 {
+  margin-bottom: var(--md-spacing);
 }

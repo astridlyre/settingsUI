@@ -7,12 +7,20 @@ export function Radio({ label, checked, onClick }) {
   const id = useRef(nanoid())
 
   const buttonClasses = useClasses(
-    [styles.radio, checked && styles.on],
+    [
+      'flex',
+      'items-center',
+      'justify-center',
+      'bg-white',
+      'rfull',
+      styles.radio,
+      checked && styles.on,
+    ],
     [checked],
   )
 
   const labelClasses = useClasses(
-    [styles.root, checked && styles.on],
+    ['gray-500', 'flex', 'items-center', styles.root, checked && styles.on],
     [checked],
   )
 
