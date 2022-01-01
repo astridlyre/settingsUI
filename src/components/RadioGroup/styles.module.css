@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--base-spacing);
+}
+
+.legend {
+  font-size: var(--h6);
+  font-weight: 600;
+  margin-bottom: var(--sm-spacing);
+  color: var(--gray-600);
+}

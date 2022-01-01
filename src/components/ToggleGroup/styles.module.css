@@ -1,0 +1,8 @@
+.root {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--base-spacing);
+  color: var(--gray-600);
+}

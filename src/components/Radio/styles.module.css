@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  gap: var(--base-spacing);
+  align-items: center;
+  cursor: pointer;
+  color: var(--gray-500);
+  transition: all 0.1s ease-out;
+}
+
+.root:hover,
+.root.on,
+.root:focus-within {
+  color: var(--gray-600);
+  transition: all 0.1s ease-out;
+}
+
+.root:hover .radio {
+  transition: all 0.1s ease-out;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.radio {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background: var(--white);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-out;
+}
+
+.radio.on {
+  background: var(--gray-100);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.radio.on .icon {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.1s ease-out;
+}
+
+.icon {
+  opacity: 0;
+  transform: scale(0.5);
+  height: 14px;
+  width: 14px;
+}
